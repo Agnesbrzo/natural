@@ -1,3 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: rgb(248, 248, 248);
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 234, 117, 0.849),
+      rgba(2, 75, 59, 0.795)
+    ),
+    url(../img/header-big.jpg);
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 45px;
+  left: 40px;
+}
+
+.logo img {
+  width: 90px;
+  opacity: 90%;
+}
+
+.text-area {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-area .main-header {
+  display: block;
+  text-transform: uppercase;
+  font-size: 6.62rem;
+  font-weight: 400;
+  letter-spacing: 1.9rem;
+  color: white;
+  animation: totheRight 0.8s ease-out;
+}
+
+.text-area h1 span:nth-child(2) {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2rem;
+  line-height: 4rem;
+  animation: totheLeft 0.8s ease-out;
+}
+
+@keyframes totheRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes totheLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
