@@ -1,0 +1,22 @@
+{
+  "name": "wilderness",
+  "version": "1.0.0",
+  "description": "Landing page with travel offer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agnesbrzo/wilderness.git"
+  },
+  "author": "Agnesbrzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Agnesbrzo/wilderness/issues"
+  },
+  "homepage": "https://github.com/Agnesbrzo/wilderness#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
