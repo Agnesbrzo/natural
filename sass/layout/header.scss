@@ -1,0 +1,34 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to left bottom,
+      rgba($color-bg-light, 0.849),
+      rgba($color-bg-green, 0.795)
+    ),
+    url(../img/header-big.jpg);
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    top: 4.5rem;
+    left: 4rem;
+  }
+
+  &__logo-bird {
+    width: 9rem;
+    opacity: 90%;
+    animation: enlarging 0.8s ease-out;
+    animation-fill-mode: backwards;
+  }
+
+  &__text-area {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
