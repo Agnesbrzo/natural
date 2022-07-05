@@ -1,44 +1,63 @@
+$color-font-white: #fff;
+$color-font-light: rgb(248, 248, 248);
+$color-font-grey: #888;
+$color-bg-light: rgb(255, 234, 117);
+$color-bg-green: rgb(2, 75, 59);
+$color-shadow: rgba(0, 0, 0, 0.356);
+
 *,
 ::before,
 ::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  color: #f8f8f8;
-  box-sizing: border-box; }
+  color: $color-font-light;
+  box-sizing: border-box;
+}
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to left bottom, rgba(255, 234, 117, 0.849), rgba(2, 75, 59, 0.795)), url(../img/header-big.jpg);
+  background-image: linear-gradient(
+      to left bottom,
+      rgba($color-bg-light, 0.849),
+      rgba($color-bg-green, 0.795)
+    ),
+    url(../img/header-big.jpg);
   background-position: top;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  position: relative; }
+  position: relative;
+}
 
 .header__logo {
   position: absolute;
   top: 4.5rem;
-  left: 4rem; }
+  left: 4rem;
+}
 
 .header__logo-bird {
   width: 9rem;
   opacity: 90%;
   animation: enlarging 0.8s ease-out;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: backwards;
+}
 
 .header__text-area {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+}
 
 .heading-primary--main-header {
   display: block;
@@ -46,9 +65,10 @@ body {
   font-size: 7.712rem;
   font-weight: 400;
   letter-spacing: 3rem;
-  color: #fff;
+  color: $color-font-white;
   animation: totheRight 0.8s ease-out;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+}
 
 .heading-primary--subtitle {
   display: block;
@@ -59,47 +79,65 @@ body {
   line-height: 4.8rem;
   animation: totheLeft 0.8s ease-out;
   backface-visibility: hidden;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+}
 
 @keyframes totheRight {
   0% {
     opacity: 0;
-    transform: translateX(-15rem); }
+    transform: translateX(-15rem);
+  }
   80% {
-    transform: translateX(1rem); }
+    transform: translateX(1rem);
+  }
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 @keyframes totheLeft {
   0% {
     opacity: 0;
-    transform: translateX(15rem); }
+    transform: translateX(15rem);
+  }
   80% {
-    transform: translateX(-1rem); }
+    transform: translateX(-1rem);
+  }
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 @keyframes enlarging {
   0% {
     transform: scale(1);
-    opacity: 0; }
+    opacity: 0;
+  }
   20% {
-    transform: scale(0.8); }
+    transform: scale(0.8);
+  }
   60% {
-    transform: scale(1.2); }
+    transform: scale(1.2);
+  }
   100% {
     transform: scale(1);
-    opacity: 0.9; } }
+    opacity: 0.9;
+  }
+}
 
 @keyframes movetoTop {
   0% {
     transform: translateY(5rem);
-    opacity: 0; }
+    opacity: 0;
+  }
+
   100% {
     transform: translate(0);
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 .button {
   text-transform: uppercase;
@@ -110,40 +148,48 @@ body {
   transition: 0.2s;
   position: relative;
   font-size: 1.65rem;
-  letter-spacing: 0.22rem; }
-
+  letter-spacing: 0.22rem;
+}
 .button--animated {
   margin-right: 3.2rem;
   animation: movetoTop 0.5s 0.4s ease-out;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: backwards;
+}
 
 .button:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 0.5rem 1.8rem rgba(0, 0, 0, 0.356); }
+  box-shadow: 0 0.5rem 1.8rem $color-shadow;
+}
 
 .button:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.356); }
+  box-shadow: 0 0.3rem 0.8rem $color-shadow;
+}
 
 .button--white {
-  background-color: #fff;
-  color: #888; }
+  background-color: $color-font-white;
+  color: $color-font-grey;
+}
 
 .button::after {
   content: "";
   display: inline-block;
   width: 100%;
   height: 100%;
+
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 5rem;
   z-index: -1;
-  transition: 0.4s; }
+  transition: 0.4s;
+}
 
 .button--white::after {
-  background-color: #fff; }
+  background-color: $color-font-white;
+}
 
 .button:hover::after {
   transform: scaleX(1.4) scaleY(1.8);
-  opacity: 0; }
+  opacity: 0;
+}
