@@ -1,6 +1,15 @@
+// colors
+
 $color-font-white: #fff;
 $color-font-light: rgb(248, 248, 248);
 $color-font-grey: #888;
+$color-font-black: #000;
 $color-bg-light: rgb(255, 234, 117);
 $color-bg-green: rgb(2, 75, 59);
 $color-shadow: rgba(0, 0, 0, 0.356);
+
+// gap
+
+$section-max-width: 140rem;
+$row-margin-bottom: 8rem;
+$horizontal-gutter: 6rem;
