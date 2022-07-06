@@ -180,6 +180,32 @@ body {
     z-index: -1;
     transition: 0.4s; }
 
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 52%;
+    display: block;
+    position: absolute;
+    transition: 0.3s;
+    box-shadow: 0.5rem 1.5rem 1.8rem 0.2rem rgba(0, 0, 0, 0.356); }
+    .composition__photo--p1 {
+      top: -2rem;
+      left: 1rem; }
+    .composition__photo--p2 {
+      top: 4rem;
+      right: 0; }
+    .composition__photo--p3 {
+      top: 15rem;
+      left: 9rem; }
+    .composition__photo:hover {
+      outline: 0.5rem solid #c5b13f;
+      outline-offset: 1.7rem;
+      transform: translateY(3px) scale(1.15);
+      z-index: 2;
+      box-shadow: 0.5rem 1.5rem 3rem 1.5rem rgba(0, 0, 0, 0.356); }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.92); }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to left bottom, rgba(255, 234, 117, 0.849), rgba(2, 75, 59, 0.795)), url(../img/header-big.jpg);
