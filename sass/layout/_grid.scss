@@ -1,6 +1,6 @@
 .row {
   max-width: $section-max-width;
-  background-color: #eee;
+
   color: $color-font-black;
   margin: 0 auto;
   &:not(:last-child) {
@@ -11,7 +11,7 @@
 
   [class^="col-"] {
     float: left;
-    background-color: orangered;
+
     &:not(:last-child) {
       margin-right: $horizontal-gutter;
     }
