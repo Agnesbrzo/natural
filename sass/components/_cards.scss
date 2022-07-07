@@ -1,0 +1,35 @@
+.card-box {
+  background-color: rgba($color-font-white, 0.78);
+  font-size: $base-font-size;
+  text-align: center;
+  padding: 4rem 3rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 2rem 0.6rem $color-shadow;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &__card-icon {
+    display: block;
+
+    font-size: 7rem;
+
+    margin-bottom: 1.2rem;
+    color: transparent;
+
+    background-image: linear-gradient(
+      to right,
+
+      $color-bg-green,
+      $color-bg-light-darken
+    );
+    -webkit-background-clip: text;
+  }
+
+  &__card-text {
+    line-height: 1.4;
+  }
+  &:hover {
+    transform: translateY(-1rem) scale(1.05);
+    box-shadow: 0 1.5rem 2.5rem 1rem $color-shadow;
+  }
+}

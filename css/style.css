@@ -140,6 +140,12 @@ body {
   padding: 26rem 0;
   margin-top: -25vh; }
 
+.section-cards {
+  padding: 20rem 0;
+  background-image: linear-gradient(to left bottom, rgba(255, 234, 117, 0.849), rgba(2, 75, 59, 0.795)), url(../img/cards-background-big.jpg);
+  background-position: center;
+  background-size: cover; }
+
 .button {
   text-transform: uppercase;
   text-decoration: none;
@@ -206,6 +212,28 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.92); }
 
+.card-box {
+  background-color: rgba(255, 255, 255, 0.78);
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 4rem 3rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 2rem 0.6rem rgba(0, 0, 0, 0.356);
+  transition: 0.3s;
+  cursor: pointer; }
+  .card-box__card-icon {
+    display: block;
+    font-size: 7rem;
+    margin-bottom: 1.2rem;
+    color: transparent;
+    background-image: linear-gradient(to right, #024b3b, #c5b13f);
+    -webkit-background-clip: text; }
+  .card-box__card-text {
+    line-height: 1.4; }
+  .card-box:hover {
+    transform: translateY(-1rem) scale(1.05);
+    box-shadow: 0 1.5rem 2.5rem 1rem rgba(0, 0, 0, 0.356); }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to left bottom, rgba(255, 234, 117, 0.849), rgba(2, 75, 59, 0.795)), url(../img/header-big.jpg);
@@ -242,16 +270,16 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+      margin-right: 6.2rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
+    width: calc((100% - 6.2rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 *6rem) / 3); }
+    width: calc((100% - 2 *6.2rem) / 3); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 *6rem) / 4); }
+    width: calc((100% - 3 *6.2rem) / 4); }
   .row .col-2-of-3 {
-    width: calc( 100% - ((100% - 2 *6rem) / 3) - 6rem); }
+    width: calc( 100% - ((100% - 2 *6.2rem) / 3) - 6.2rem); }
   .row .col-3-of-4 {
-    width: calc( 100% - ((100% - 3 *6rem) / 4) - 6rem); }
+    width: calc( 100% - ((100% - 3 *6.2rem) / 4) - 6.2rem); }
   .row .col-2-of-4 {
-    width: calc( 2 * ((100% - 3 *6rem) / 4) + 6rem); }
+    width: calc( 2 * ((100% - 3 *6.2rem) / 4) + 6.2rem); }

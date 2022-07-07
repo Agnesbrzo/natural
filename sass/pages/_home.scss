@@ -3,3 +3,15 @@
   padding: 26rem 0;
   margin-top: -25vh;
 }
+
+.section-cards {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to left bottom,
+      rgba($color-bg-light, 0.849),
+      rgba($color-bg-green, 0.795)
+    ),
+    url(../img/cards-background-big.jpg);
+  background-position: center;
+  background-size: cover;
+}
