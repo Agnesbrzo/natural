@@ -144,7 +144,11 @@ body {
   padding: 20rem 0;
   background-image: linear-gradient(to left bottom, rgba(255, 234, 117, 0.849), rgba(2, 75, 59, 0.795)), url(../img/cards-background-big.jpg);
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  transform: skewY(-6deg);
+  margin-top: -10rem; }
+  .section-cards > * {
+    transform: skewY(6deg); }
 
 .button {
   text-transform: uppercase;

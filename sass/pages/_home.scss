@@ -14,4 +14,10 @@
     url(../img/cards-background-big.jpg);
   background-position: center;
   background-size: cover;
+  transform: skewY(-6deg);
+  margin-top: -10rem;
+
+  & > * {
+    transform: skewY(6deg);
+  }
 }
