@@ -142,13 +142,18 @@ body {
 
 .section-cards {
   padding: 20rem 0;
-  background-image: linear-gradient(to left bottom, rgba(255, 234, 117, 0.849), rgba(2, 75, 59, 0.795)), url(../img/cards-background-big.jpg);
+  background-image: linear-gradient(to left bottom, rgba(253, 234, 127, 0.849), rgba(2, 75, 59, 0.795)), url(../img/cards-background-big.jpg);
   background-position: center;
   background-size: cover;
   transform: skewY(-6deg);
   margin-top: -10rem; }
   .section-cards > * {
     transform: skewY(6deg); }
+
+.section-journeys {
+  padding: 25rem 0;
+  background-color: #f7f7f7;
+  margin-top: -8.2rem; }
 
 .button {
   text-transform: uppercase;
@@ -238,9 +243,39 @@ body {
     transform: translateY(-1rem) scale(1.05);
     box-shadow: 0 1.5rem 2.5rem 1rem rgba(0, 0, 0, 0.356); }
 
+.card2-item {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  min-height: 24rem; }
+  .card2-item__card-side {
+    min-height: 24rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.6s;
+    backface-visibility: hidden;
+    box-shadow: 0 1rem 2.5rem 0.001rem rgba(124, 124, 124, 0.253); }
+    .card2-item__card-side--front {
+      background-color: white; }
+    .card2-item__card-side--back {
+      background-color: #e4e46b;
+      transform: rotateY(180deg); }
+      .card2-item__card-side--back--1 {
+        background-image: linear-gradient(to right top, #0d6b55, #10c57a); }
+      .card2-item__card-side--back--2 {
+        background-image: linear-gradient(to right top, #c5b13f, #fdea7f); }
+      .card2-item__card-side--back--3 {
+        background-image: linear-gradient(to right top, #ffd16d, #fff6ce); }
+  .card2-item:hover .card2-item__card-side--front {
+    transform: rotateY(-180deg); }
+  .card2-item:hover .card2-item__card-side--back {
+    transform: rotateY(0); }
+
 .header {
   height: 100vh;
-  background-image: linear-gradient(to left bottom, rgba(255, 234, 117, 0.849), rgba(2, 75, 59, 0.795)), url(../img/header-big.jpg);
+  background-image: linear-gradient(to left bottom, rgba(253, 234, 127, 0.849), rgba(2, 75, 59, 0.795)), url(../img/header-big.jpg);
   background-position: top;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
