@@ -39,6 +39,15 @@
     }
   }
 
+  &--green {
+    background-color: $color-bg-light-darken;
+    color: $color-font-white;
+
+    &::after {
+      background-color: $color-bg-light-darken;
+    }
+  }
+
   &::after {
     content: "";
     display: inline-block;
