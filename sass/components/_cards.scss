@@ -40,9 +40,9 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  min-height: 24rem;
+  min-height: 44rem;
   &__card-side {
-    min-height: 24rem;
+    min-height: 44rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -50,6 +50,8 @@
     transition: 0.6s;
     backface-visibility: hidden;
     box-shadow: 0 1rem 2.5rem 0.001rem rgba(124, 124, 124, 0.253);
+    border-radius: 4px;
+    overflow: hidden;
     &--front {
       background-color: white;
     }
@@ -88,5 +90,43 @@
   }
   &:hover &__card-side--back {
     transform: rotateY(0);
+  }
+
+  //   front card styling
+
+  .card2-image {
+    height: 24rem;
+    background-blend-mode: color;
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+    &--1 {
+      background-image: linear-gradient(
+          to right top,
+          $color-card-1-dark,
+          $color-card-1-light
+        ),
+        url(../img/card2-1.jpg);
+    }
+    &--2 {
+      background-image: linear-gradient(
+          to right top,
+          $color-bg-light-darken,
+          $color-bg-light
+        ),
+        url(../img/card2-2.jpg);
+    }
+    &--3 {
+      background-image: linear-gradient(
+          to right top,
+          $color-card-3-dark,
+          $color-card-3-light
+        ),
+        url(../img/card2-3.jpg);
+    }
+  }
+  .card-header {
+  }
+  .card-text {
   }
 }
