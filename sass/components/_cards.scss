@@ -40,9 +40,9 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  min-height: 44rem;
+  min-height: 48rem;
   &__card-side {
-    min-height: 44rem;
+    min-height: 48rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -125,8 +125,60 @@
         url(../img/card2-3.jpg);
     }
   }
-  .card-header {
+  .card2-header {
+    position: absolute;
+    top: 17rem;
+    right: 2rem;
+
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-font-white;
+    line-height: 1.48;
+    width: 73%;
+
+    .header__span {
+      padding: 0.8rem 1.1rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      &--col1 {
+        background-image: linear-gradient(
+          to right top,
+          rgba($color-card-1-dark, 0.85),
+          rgba($color-card-1-light, 0.85)
+        );
+      }
+      &--col2 {
+        background-image: linear-gradient(
+          to right top,
+          rgba($color-bg-light-darken, 0.85),
+          rgba($color-bg-light, 0.85)
+        );
+      }
+      &--col3 {
+        background-image: linear-gradient(
+          to right top,
+          rgba($color-card-3-dark, 0.89),
+          rgba($color-card-3-light, 0.83)
+        );
+      }
+    }
   }
-  .card-text {
+  .card2-text {
+    padding-top: 3.9rem;
+    ul {
+      list-style: none;
+      text-align: center;
+      font-size: 1.62rem;
+      width: 70%;
+      margin: 0 auto;
+      li {
+        padding: 0.8rem;
+        &:not(:last-child) {
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
   }
 }

@@ -247,9 +247,9 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  min-height: 44rem; }
+  min-height: 48rem; }
   .card2-item__card-side {
-    min-height: 44rem;
+    min-height: 48rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -269,7 +269,7 @@ body {
       .card2-item__card-side--back--2 {
         background-image: linear-gradient(to right top, #c5b13f, #fdea7f); }
       .card2-item__card-side--back--3 {
-        background-image: linear-gradient(to right top, #ffd16d, #fff6ce); }
+        background-image: linear-gradient(to right top, #ffc64b, #ffefa9); }
   .card2-item:hover .card2-item__card-side--front {
     transform: rotateY(-180deg); }
   .card2-item:hover .card2-item__card-side--back {
@@ -285,7 +285,40 @@ body {
     .card2-item .card2-image--2 {
       background-image: linear-gradient(to right top, #c5b13f, #fdea7f), url(../img/card2-2.jpg); }
     .card2-item .card2-image--3 {
-      background-image: linear-gradient(to right top, #ffd16d, #fff6ce), url(../img/card2-3.jpg); }
+      background-image: linear-gradient(to right top, #ffc64b, #ffefa9), url(../img/card2-3.jpg); }
+  .card2-item .card2-header {
+    position: absolute;
+    top: 17rem;
+    right: 2rem;
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.48;
+    width: 73%; }
+    .card2-item .card2-header .header__span {
+      padding: 0.8rem 1.1rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone; }
+      .card2-item .card2-header .header__span--col1 {
+        background-image: linear-gradient(to right top, rgba(13, 107, 85, 0.85), rgba(16, 197, 122, 0.85)); }
+      .card2-item .card2-header .header__span--col2 {
+        background-image: linear-gradient(to right top, rgba(197, 177, 63, 0.85), rgba(253, 234, 127, 0.85)); }
+      .card2-item .card2-header .header__span--col3 {
+        background-image: linear-gradient(to right top, rgba(255, 198, 75, 0.89), rgba(255, 239, 169, 0.83)); }
+  .card2-item .card2-text {
+    padding-top: 3.9rem; }
+    .card2-item .card2-text ul {
+      list-style: none;
+      text-align: center;
+      font-size: 1.62rem;
+      width: 70%;
+      margin: 0 auto; }
+      .card2-item .card2-text ul li {
+        padding: 0.8rem; }
+        .card2-item .card2-text ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
 
 .header {
   height: 100vh;
