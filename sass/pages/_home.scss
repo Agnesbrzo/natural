@@ -29,8 +29,9 @@
 }
 
 section.opinions {
-  padding: 5rem 0 8rem;
-  background-color: $color-background-main-page;
+  padding: 11rem 0 10rem;
+
+  position: relative;
 }
 
 section.opinions .row:not(:last-child) {

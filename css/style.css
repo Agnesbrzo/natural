@@ -138,8 +138,8 @@ body {
   margin-top: -8.2rem; }
 
 section.opinions {
-  padding: 5rem 0 8rem;
-  background-color: #f7f7f7; }
+  padding: 11rem 0 10rem;
+  position: relative; }
 
 section.opinions .row:not(:last-child) {
   margin-bottom: 4.6rem; }
@@ -352,7 +352,7 @@ section.opinions .row:not(:last-child) {
 .opinion-box {
   margin-bottom: 3rem;
   width: 75%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   margin: 0 auto;
   padding: 5rem 6.7rem;
   box-shadow: 0 1rem 2rem 0.1rem rgba(0, 0, 0, 0.356);
@@ -395,6 +395,20 @@ section.opinions .row:not(:last-child) {
   .opinion-box .opinion-text-block {
     transform: translateX(3.4rem) skewX(13deg);
     padding-right: 3.5rem; }
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0.15; }
+  .background-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   height: 100vh;
