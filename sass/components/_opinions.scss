@@ -1,0 +1,58 @@
+.opinion-box {
+  margin-bottom: 3rem;
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0 auto;
+  padding: 5rem 6.7rem;
+  // @include clearfix;
+  box-shadow: 0 1rem 2rem 0.1rem $color-shadow;
+  transform: skewX(-13deg);
+  transition: 0.5s;
+  .shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: skewX(13deg);
+    overflow: hidden;
+
+    &__image {
+      height: 100%;
+      position: relative;
+      transform: translateX(-20%) scale(1.1);
+      transition: 0.4s;
+    }
+    &__caption {
+      color: $color-font-white;
+      text-align: center;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 3%);
+      font-size: 2rem;
+      line-height: 2.7rem;
+      text-transform: uppercase;
+      opacity: 0;
+      transition: 0.4s;
+      backface-visibility: hidden;
+    }
+  }
+
+  &:hover .shape__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  &:hover .shape__image {
+    transform: translateX(-20%) scale(1);
+    filter: blur(3px) brightness(0.6);
+  }
+  .opinion-text-block {
+    transform: translateX(3.4rem) skewX(13deg);
+    padding-right: 3.5rem;
+  }
+}

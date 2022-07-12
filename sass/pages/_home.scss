@@ -23,12 +23,16 @@
 }
 
 .section-journeys {
-  padding: 25rem 0 8rem;
+  padding: 25rem 0 0.1rem;
   background-color: $color-background-main-page;
   margin-top: -8.2rem;
 }
 
 section.opinions {
-  padding: 25rem 0 8rem;
+  padding: 5rem 0 8rem;
   background-color: $color-background-main-page;
+}
+
+section.opinions .row:not(:last-child) {
+  margin-bottom: 4.6rem;
 }

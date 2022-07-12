@@ -62,3 +62,27 @@
     transition: 0.4s;
   }
 }
+
+.button-text {
+  font-size: $base-font-size;
+  text-decoration: none;
+  color: $color-bg-green;
+  border-bottom: 1px solid $color-bg-green;
+  transition: 0.3s;
+  padding: 0.8rem 1.8rem;
+  display: inline-block;
+
+  &:hover {
+    background-color: $color-bg-green;
+    color: $color-font-white;
+    border-radius: 2rem;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem $color-shadow;
+    padding: 0.8rem 2.2rem;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 0.5rem 1rem $color-shadow;
+  }
+}

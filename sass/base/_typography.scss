@@ -61,32 +61,9 @@ body {
 
 .paragraph {
   font-size: $base-font-size;
-  line-height: 2.5rem;
+  line-height: 2.7rem;
 
   &:not(:last-child) {
     margin-bottom: 2.8rem;
-  }
-}
-
-.button-text {
-  font-size: $base-font-size;
-  text-decoration: none;
-  color: $color-bg-green;
-  border-bottom: 1px solid $color-bg-green;
-  transition: 0.3s;
-  padding: 0.8rem 1.5rem;
-  display: inline-block;
-
-  &:hover {
-    background-color: $color-bg-green;
-    color: $color-font-white;
-    border-radius: 2rem;
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem $color-shadow;
-  }
-
-  &:active {
-    transform: translateY(0);
-    box-shadow: 0 0.5rem 1rem $color-shadow;
   }
 }
