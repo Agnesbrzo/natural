@@ -138,11 +138,30 @@ body {
   margin-top: -8.2rem; }
 
 section.opinions {
-  padding: 11rem 0 10rem;
+  padding: 11rem 0 6rem;
   position: relative; }
 
 section.opinions .row:not(:last-child) {
   margin-bottom: 4.6rem; }
+
+section.form {
+  padding: 15rem 0;
+  min-height: 50rem;
+  background-image: linear-gradient(to right bottom, #024b3b -55%, #fdea7f); }
+  section.form .form-box {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.87) 0%, rgba(255, 255, 255, 0.87) 55%, transparent 55%), url(../../img/form-section-big.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 50vw;
+    max-height: 56rem;
+    border-radius: 4px;
+    box-shadow: 0 0.5rem 3rem 3px rgba(0, 0, 0, 0.356); }
+    section.form .form-box .form-text-container {
+      width: 50%;
+      height: 100%;
+      padding: 5rem; }
 
 .button {
   text-transform: uppercase;
