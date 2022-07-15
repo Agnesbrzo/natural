@@ -39,12 +39,21 @@
     }
   }
 
-  &--green {
+  &--gold {
     background-color: $color-bg-light-darken;
     color: $color-font-white;
 
     &::after {
       background-color: $color-bg-light-darken;
+    }
+  }
+
+  &--green {
+    background-color: $color-bg-green;
+    color: $color-font-white;
+
+    &::after {
+      background-color: $color-bg-green;
     }
   }
 
