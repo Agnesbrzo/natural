@@ -173,7 +173,7 @@
       </section>
 
       <!-- section journeys -->
-      <section class="section-journeys">
+      <section class="section-journeys" id="journeys">
         <div class="u-text-center u-margin-bottom-bigger">
           <h2 class="heading-secondary">Most popular journeys</h2>
         </div>
@@ -205,7 +205,7 @@
                     <div class="price-text">Now only</div>
                     <div class="price-value">390$</div>
                   </div>
-                  <a href="#" class="button button--white">Book now</a>
+                  <a href="#popup" class="button button--white">Book now</a>
                 </div>
               </div>
             </div>
@@ -237,7 +237,7 @@
                     <div class="price-text">Now only</div>
                     <div class="price-value">320$</div>
                   </div>
-                  <a href="#" class="button button--white">Book now</a>
+                  <a href="#popup" class="button button--white">Book now</a>
                 </div>
               </div>
             </div>
@@ -269,7 +269,7 @@
                     <div class="price-text">Now only</div>
                     <div class="price-value">250$</div>
                   </div>
-                  <a href="#" class="button button--white">Book now</a>
+                  <a href="#popup" class="button button--white">Book now</a>
                 </div>
               </div>
             </div>
@@ -460,21 +460,23 @@
         </div>
       </div>
     </footer>
-    <div class="popup">
+
+    <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
           <img
-            src="/img/popup-image-1.jpg"
-            alt="travel photo with compass"
-            class="popup__image"
+          src="/img/popup-image-1.jpg"
+          alt="travel photo with compass"
+          class="popup__image"
           />
           <img
-            src="/img/popup-image-2.jpg"
-            alt="travel photo with person walking"
-            class="popup__image"
+          src="/img/popup-image-2.jpg"
+          alt="travel photo with person walking"
+          class="popup__image"
           />
         </div>
         <div class="popup__right">
+          <a href="#journeys" class="close">&#10005</a>
           <h2 class="heading-secondary u-margin-bottom-medium">
             Start booking now
           </h2>
@@ -489,7 +491,7 @@
             quibusdam dolorem necessitatibus eaque in modi quam cupiditate
             illum! Quos corporis tempora provident.
           </p>
-          <a href="#" class="button button--green">Book now</a>
+          <a href="#journeys" class="button button--green">Book now</a>
         </div>
       </div>
     </div>
