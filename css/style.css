@@ -163,6 +163,44 @@ section.form-section {
       height: 100%;
       padding: 7rem; }
 
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10000000; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 85%;
+    border-radius: 4px;
+    overflow: hidden;
+    display: table; }
+    .popup__content .popup__left {
+      display: table-cell;
+      width: 33.33333333%; }
+      .popup__content .popup__left .popup__image {
+        display: block;
+        width: 100%; }
+    .popup__content .popup__right {
+      display: table-cell;
+      width: 66.66666666%;
+      padding: 4rem 5rem;
+      vertical-align: middle; }
+      .popup__content .popup__right .tertiary-heading {
+        color: #444; }
+      .popup__content .popup__right p {
+        color: #444;
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 1px solid #ddd;
+        hyphens: auto; }
+
 .button {
   text-transform: uppercase;
   text-decoration: none;
