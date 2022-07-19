@@ -1,6 +1,7 @@
 .navigation {
   &__checkbox {
     display: none;
+
     &:checked ~ .navigation__background {
       transform: scale(100);
     }
@@ -9,6 +10,7 @@
       opacity: 1;
     }
   }
+
   &__button {
     position: fixed;
     width: 7rem;
@@ -19,7 +21,9 @@
     background-color: #fff;
     z-index: 20;
     box-shadow: 0 0.5rem 1.5rem rgba($color-shadow, 0.2);
+    cursor: pointer;
   }
+
   &__background {
     width: 6rem;
     height: 6rem;
@@ -29,7 +33,7 @@
     top: 5.5rem;
     right: 6rem;
     z-index: 10;
-    transition: 0.8s;
+    transition: 0.8s cubic-bezier(0.76, 0, 0.24, 1);
     // transform: scale(100);
   }
   &__nav {
@@ -40,7 +44,7 @@
     width: 0;
     opacity: 0;
     z-index: 11;
-    transition: 0.8s;
+    transition: 0.8s cubic-bezier(0.76, 0, 0.24, 1);
 
     .nav-ul {
       position: absolute;
@@ -84,5 +88,60 @@
         }
       }
     }
+  }
+
+  // animated nav button
+
+  &__icon {
+    &,
+    &::before,
+    &::after {
+      height: 2px;
+      display: block;
+      background-color: #333;
+      transition: 0.3s;
+    }
+
+    & {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 52%;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+    }
+
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
+    }
+  }
+  &__button:hover {
+    transform: translateY(2px);
+  }
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+  &__checkbox:checked + &__button &__icon::before {
+    transform: rotate(225deg);
+    top: 0;
+  }
+  &__checkbox:checked + &__button &__icon::after {
+    transform: rotate(-225deg);
+    top: 0;
   }
 }
