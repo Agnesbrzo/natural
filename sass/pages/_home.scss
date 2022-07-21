@@ -57,6 +57,14 @@ section.opinions {
   @include respond(tab-portrait) {
     padding: 9rem 0 6rem;
   }
+  .row {
+    @include respond(tab-portrait) {
+      max-width: 80%;
+    }
+    @include respond(phone) {
+      max-width: 94%;
+    }
+  }
 }
 
 section.opinions .row:not(:last-child) {

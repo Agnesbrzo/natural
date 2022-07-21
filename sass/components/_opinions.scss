@@ -3,14 +3,21 @@
   width: 75%;
   background-color: rgba(255, 255, 255, 0.7);
   margin: 0 auto;
-  @include respond(phone) {
-    margin: 0;
-  }
   padding: 5rem 6.7rem;
   // @include clearfix;
   box-shadow: 0 1rem 2rem 0.1rem $color-shadow;
   transform: skewX(-13deg);
   transition: 0.5s;
+  @include respond(tab-portrait) {
+    width: 100%;
+  }
+  @media (max-width: 700px) {
+    transform: skewX(0);
+  }
+  @include respond(phone) {
+    text-align: center;
+  }
+
   .shape {
     width: 15rem;
     height: 15rem;
@@ -22,6 +29,15 @@
     clip-path: circle(50% at 50% 50%);
     transform: skewX(13deg);
     overflow: hidden;
+    @media (max-width: 700px) {
+      transform: skewX(0);
+    }
+    @include respond(phone) {
+      float: none;
+      -webkit-shape-outside: none;
+      shape-outside: none;
+      margin: 0 auto 4rem;
+    }
 
     &__image {
       height: 100%;
@@ -57,5 +73,13 @@
   .opinion-text-block {
     transform: translateX(3.4rem) skewX(13deg);
     padding-right: 3.5rem;
+    @media (max-width: 700px) {
+      transform: translateX(3.4rem) skewX(0);
+      padding-right: 0;
+    }
+    @include respond(phone) {
+      transform: translateX(0) skewX(0);
+      padding-right: 0;
+    }
   }
 }
