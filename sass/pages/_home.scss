@@ -2,6 +2,19 @@
   background-color: $color-background-main-page;
   padding: 26rem 0;
   margin-top: -25vh;
+  @include respond(tab-portrait) {
+    padding: 28rem 0;
+  }
+  .row {
+    @include respond(tab-portrait) {
+      max-width: 77%;
+      text-align: center;
+    }
+    @include respond(phone) {
+      max-width: 95%;
+      text-align: center;
+    }
+  }
 }
 
 .section-cards {
@@ -20,18 +33,30 @@
   & > * {
     transform: skewY(6deg);
   }
+  @include respond(tab-portrait) {
+    padding: 15rem 0;
+  }
 }
 
 .section-journeys {
   padding: 25rem 0 0.1rem;
   background-color: $color-background-main-page;
   margin-top: -8.2rem;
+  @include respond(tab-portrait) {
+    padding: 20rem 0 3rem;
+  }
+  @include respond(phone) {
+    padding: 19rem 0 3rem;
+  }
 }
 
 section.opinions {
   padding: 11rem 0 6rem;
 
   position: relative;
+  @include respond(tab-portrait) {
+    padding: 9rem 0 6rem;
+  }
 }
 
 section.opinions .row:not(:last-child) {
@@ -47,6 +72,12 @@ section.form-section {
     $color-bg-green -55%,
     $color-bg-light
   );
+  @include respond(tab-portrait) {
+    padding: 9rem 0;
+  }
+  @include respond(phone) {
+    padding: 7rem 0;
+  }
 
   .form-box {
     background-image: linear-gradient(

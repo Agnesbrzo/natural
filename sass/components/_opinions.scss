@@ -3,6 +3,9 @@
   width: 75%;
   background-color: rgba(255, 255, 255, 0.7);
   margin: 0 auto;
+  @include respond(phone) {
+    margin: 0;
+  }
   padding: 5rem 6.7rem;
   // @include clearfix;
   box-shadow: 0 1rem 2rem 0.1rem $color-shadow;

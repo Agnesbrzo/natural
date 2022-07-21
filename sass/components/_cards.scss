@@ -7,6 +7,9 @@
   box-shadow: 0 1.5rem 2rem 0.6rem $color-shadow;
   transition: 0.3s;
   cursor: pointer;
+  @include respond(tab-portrait) {
+    padding: 4.7rem 3.2rem;
+  }
 
   &__card-icon {
     display: block;
@@ -201,6 +204,85 @@
         font-size: 7rem;
         font-weight: 100;
         margin-bottom: 6.5rem;
+      }
+    }
+  }
+  @include respond(tab-portrait) {
+    position: relative;
+    min-height: 49.4rem;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1rem 2.5rem 0.001rem rgba(124, 124, 124, 0.253);
+    background-color: white;
+
+    &__card-side {
+      min-height: 38rem;
+      position: relative;
+      box-shadow: 0 0rem 0rem 0rem rgba(124, 124, 124, 0);
+      &--front {
+        background-color: white;
+      }
+      &--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+    &:hover &__card-side--front {
+      transform: rotateY(0);
+    }
+    &:hover &__card-side--back {
+      transform: rotateY(0);
+    }
+
+    //   front card styling
+
+    .card2-image {
+      height: 32rem;
+    }
+    .card2-header {
+      position: absolute;
+      top: 25rem;
+      right: 2rem;
+    }
+
+    .card2-text {
+      padding-top: 4.5rem;
+      ul {
+        list-style: none;
+        text-align: center;
+        font-size: 1.62rem;
+        width: 70%;
+        margin: 0 auto 2rem;
+        li {
+          padding: 0.8rem;
+          &:not(:last-child) {
+            border-bottom: 1px solid $color-underline-gray;
+          }
+        }
+      }
+    }
+    //   styling back
+
+    .card-back-container {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      text-align: center;
+      width: 100%;
+      color: $color-font-white;
+      .price-box {
+        .price-text {
+          font-size: 1.7rem;
+          margin-top: 10rem;
+          margin-bottom: 1rem;
+          text-transform: uppercase;
+        }
+        .price-value {
+          font-size: 7rem;
+          font-weight: 100;
+          margin-bottom: 4rem;
+        }
       }
     }
   }
