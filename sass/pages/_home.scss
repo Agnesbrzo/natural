@@ -2,8 +2,19 @@
   background-color: $color-background-main-page;
   padding: 26rem 0;
   margin-top: -25vh;
+  @media (max-width: 1799px) {
+    margin-top: -17vh;
+  }
+
+  @media (max-width: 1450px) {
+    padding: 26rem 4rem;
+  }
   @include respond(tab-portrait) {
     padding: 28rem 0;
+    margin-top: -13vh;
+  }
+  @media (max-width: 320px) {
+    padding: 23rem 0;
   }
   .row {
     @include respond(tab-portrait) {
@@ -32,6 +43,9 @@
 
   & > * {
     transform: skewY(6deg);
+  }
+  @media (max-width: 1450px) {
+    padding: 20rem 4rem;
   }
   @include respond(tab-portrait) {
     padding: 15rem 0;
@@ -86,7 +100,11 @@ section.form-section {
   @include respond(phone) {
     padding: 7rem 0;
   }
-
+  .row {
+    @include respond(tab-portrait) {
+      max-width: 97%;
+    }
+  }
   .form-box {
     background-image: linear-gradient(
         105deg,
@@ -99,14 +117,55 @@ section.form-section {
     background-position: center;
     width: 80%;
     margin: 0 auto;
-    height: 50vw;
-    max-height: 56rem;
+
     border-radius: 4px;
     box-shadow: 0 0.5rem 3rem 3px $color-shadow;
+    @include respond(tab-landscape) {
+      width: 89%;
+      background-image: linear-gradient(
+          105deg,
+          rgba(255, 255, 255, 0.87) 0%,
+          rgba(255, 255, 255, 0.87) 60%,
+          transparent 60%
+        ),
+        url(../../img/form-section-big.jpg);
+    }
+    @include respond(phone) {
+      width: 100%;
+      background-image: linear-gradient(
+          105deg,
+          rgba(255, 255, 255, 0.87) 0%,
+          rgba(255, 255, 255, 0.87) 100%
+        ),
+        url(../../img/form-section-big.jpg);
+    }
     .form-text-container {
-      width: 50%;
+      width: 60%;
       height: 100%;
       padding: 7rem;
+      @media (max-width: 977px) {
+        padding: 5.5rem 7rem;
+      }
+      @media (max-width: 750px) {
+        padding: 4rem 5.5rem;
+      }
+      @media (max-width: 682px) {
+        padding: 4rem 1rem 4rem 5.5rem;
+      }
+      @include respond(phone) {
+        width: 100%;
+        text-align: center;
+        padding: 4rem;
+      }
+
+      .heading-secondary {
+        @include respond(tab-landscape) {
+          padding: 0;
+        }
+        @media (max-width: 824px) {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

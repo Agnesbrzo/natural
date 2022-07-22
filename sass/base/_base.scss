@@ -18,6 +18,9 @@ html {
   @include respond(phone) {
     font-size: 44%;
   }
+  @include respond(phone-420) {
+    font-size: 44%;
+  }
   @include respond(big-desctop) {
     font-size: 75%;
   }

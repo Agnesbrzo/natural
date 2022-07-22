@@ -22,8 +22,13 @@
   [class^="col-"] {
     float: left;
 
+    @media (max-width: 1375px) and (min-width: 901px) {
+      margin-bottom: 6rem;
+    }
+
     &:not(:last-child) {
       margin-right: $horizontal-gutter;
+
       @include respond(tab-portrait) {
         margin-right: 0 !important;
         margin-bottom: 6rem;
@@ -45,6 +50,14 @@
   }
   .col-1-of-4 {
     width: calc((100% - 3 *#{$horizontal-gutter}) / 4);
+    @media (max-width: 1375px) {
+      width: calc((100% - 1 *#{$horizontal-gutter}) / 2);
+    }
+    &:nth-child(2) {
+      @media (max-width: 1375px) and (min-width: 901px) {
+        margin-right: 0;
+      }
+    }
   }
   .col-2-of-3 {
     width: calc(

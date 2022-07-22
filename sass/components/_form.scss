@@ -6,6 +6,12 @@
   &__group {
     &:not(:last-child) {
       margin-bottom: 2rem;
+      @media (max-width: 824px) {
+        margin-bottom: 1rem;
+      }
+      @media (max-width: 682px) {
+        margin-bottom: 0.1rem;
+      }
     }
     .form__label {
       display: block;
@@ -26,6 +32,9 @@
       background-color: rgba($color-font-white, 0.87);
       border-bottom: 3px solid transparent;
       transition: 0.3s;
+      @include respond(phone) {
+        margin: 0 auto;
+      }
 
       &:focus {
         outline: none;
@@ -93,5 +102,15 @@
   .btn-form {
     border: none;
     margin-top: 3rem;
+    @media (max-width: 750px) {
+      font-size: 1.55rem;
+      padding: 1.5rem 3.7rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 682px) {
+      font-size: 1.38rem;
+      padding: 1.3rem 2.5rem;
+      margin-top: 3rem;
+    }
   }
 }

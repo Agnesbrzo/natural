@@ -8,11 +8,17 @@
   position: relative;
   font-size: 1.65rem;
   letter-spacing: 0.22rem;
+  @media (max-width: 390px) {
+    padding: 3rem 4rem;
+  }
 
   &--animated {
     margin-right: 3.2rem;
     animation: movetoTop 0.5s 0.4s ease-out;
     animation-fill-mode: backwards;
+    @media (max-width: 390px) {
+      margin-right: 0;
+    }
   }
 
   &:hover {
