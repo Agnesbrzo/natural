@@ -2,7 +2,7 @@
   color: $color-font-light;
   padding: 8rem 0;
   background-color: $color-bg-footer;
-  @include respond(tab-portrait) {
+  @include respond(tab-landscape) {
     padding: 6rem 0;
   }
   @include respond(phone) {
@@ -36,7 +36,7 @@
   .row {
     margin-top: 6rem;
     font-size: 1.6rem;
-    @include respond(tab-portrait) {
+    @include respond(tab-landscape) {
       max-width: 60rem;
       text-align: center;
       font-size: 1.7rem;
@@ -50,10 +50,20 @@
       .list-container {
         .list-item {
           display: inline-block;
+          line-height: 3.4rem;
+          @media (max-width: 413px) {
+            min-width: 27%;
+          }
+          @media (max-width: 291px) {
+            display: block;
+          }
           &:not(:last-child) {
             margin-right: 3rem;
-            @include respond(tab-portrait) {
+            @include respond(tab-landscape) {
               margin-right: 2rem;
+            }
+            @media (max-width: 291px) {
+              margin-right: 0;
             }
           }
           .footer__link {
@@ -67,14 +77,15 @@
       border-top: 2px solid $color-font-grey;
       padding-top: 2rem;
       color: $color-font-light;
+      line-height: 3.4rem;
       float: right;
-      @include respond(tab-portrait) {
+      @include respond(tab-landscape) {
         float: none;
         text-align: center;
       }
     }
     .footer p {
-      @include respond(tab-portrait) {
+      @include respond(tab-landscape) {
         text-align: center;
       }
     }

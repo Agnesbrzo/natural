@@ -11,6 +11,15 @@
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   position: relative;
+  //responsive image
+  @media (max-width: 600px) {
+    background-image: linear-gradient(
+        to left bottom,
+        rgba($color-bg-light, 0.849),
+        rgba($color-bg-green, 0.795)
+      ),
+      url(../img/header-small.jpg);
+  }
   @media (max-width: 1799px) {
     height: 60vh;
   }
