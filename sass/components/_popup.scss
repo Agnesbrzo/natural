@@ -12,6 +12,11 @@
   opacity: 0;
   transition: 0.3s;
 
+  @supports (backdrop-filter: blur(8px)) or (-webkit-backdrop-filter: blur(8px)) {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
   &__content {
     position: absolute;
     top: 50%;

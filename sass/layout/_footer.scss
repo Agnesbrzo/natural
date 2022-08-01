@@ -1,6 +1,6 @@
 .footer {
   color: $color-font-light;
-  padding: 8rem 0;
+  padding: 8rem 1rem;
   background-color: $color-bg-footer;
   @include respond(tab-landscape) {
     padding: 6rem 0;
@@ -97,10 +97,12 @@
       background-color: $color-bg-footer;
       transition: 0.2s;
     }
-    .footer__link:hover {
-      transform: rotate(5deg) scale(1.13);
-      color: $color-bg-light;
-      text-shadow: 0 1rem 1rem black;
+    @media (hover: hover) {
+      .footer__link:hover {
+        transform: rotate(5deg) scale(1.13);
+        color: $color-bg-light;
+        text-shadow: 0 1rem 1rem black;
+      }
     }
   }
 }

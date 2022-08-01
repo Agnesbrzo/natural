@@ -15,6 +15,9 @@ html {
   @include respond(tab-portrait) {
     font-size: 50%;
   }
+  @media (max-width: 56.25em) and (orientation: landscape) {
+    font-size: 44%;
+  }
   @include respond(phone) {
     font-size: 44%;
   }
@@ -28,4 +31,9 @@ html {
 
 body {
   box-sizing: border-box;
+}
+
+::selection {
+  background-color: green;
+  color: #eee;
 }
