@@ -404,7 +404,7 @@ section.form-section .form-box {
       rgba(255, 255, 255, 0.87) 55%,
       transparent 55%
     ),
-    url(../../img/form-section-small.jpg);
+    url(../img/form-section-small.jpg);
   background-size: cover;
   background-position: center;
   width: 80%;
@@ -421,7 +421,7 @@ section.form-section .form-box {
         rgba(255, 255, 255, 0.87) 60%,
         transparent 60%
       ),
-      url(../../img/form-section-small.jpg);
+      url(../img/form-section-small.jpg);
   }
 }
 @media (max-width: 37.5em) {
@@ -432,7 +432,7 @@ section.form-section .form-box {
         rgba(255, 255, 255, 0.87) 0%,
         rgba(255, 255, 255, 0.87) 100%
       ),
-      url(../../img/form-section-small.jpg);
+      url(../img/form-section-small.jpg);
   }
 }
 section.form-section .form-box .form-text-container {
